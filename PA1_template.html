@@ -248,6 +248,8 @@ print(paste(&#39;The max average steps &#39;,result[2],&#39; is at interval &#39
 
 <h2>Imputing missing values</h2>
 
+<p>We use the average steps per interval to replae the corresponding NAs in each day</p>
+
 <pre><code class="r">c&lt;-complete.cases(act)
 missing&lt;-act[!c,]
 print(paste(&#39;Number of NA rows is &#39;,nrow(missing)))

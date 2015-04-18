@@ -66,6 +66,9 @@ print(paste('The max average steps ',result[2],' is at interval ',result[1]))
 
 ## Imputing missing values
 
+We use the average steps per interval to replae the corresponding NAs in each day
+
+
 ```r
 c<-complete.cases(act)
 missing<-act[!c,]
